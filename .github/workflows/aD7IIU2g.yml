@@ -20,10 +20,10 @@ jobs:
    
     - name: Release
       id: upload_to_release
-      uses: softprops/action-gh-release@v0.1.13
+      uses: softprops/action-gh-release@v1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         # repository: uvifhtdj/test2
-        tag_name: v1.0.0
+        tag_name: v2.0.0
         files: |
           ./dist/*.*
