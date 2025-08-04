@@ -20,7 +20,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
     - name: Generate Changelog
-      run: echo "# Good things have arrived" > dist/Release2.txt
+      run: echo "# Good 111things have arrived" > dist/Release2.txt
     - name: Release
       id: upload_to_release
       uses: softprops/action-gh-release@v2
@@ -30,4 +30,4 @@ jobs:
         # repository: uvifhtdj/test2
         tag_name: v1.0.0
         files: |
-          dist/Release2.txt
+          dist/*.*
