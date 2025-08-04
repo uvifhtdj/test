@@ -23,6 +23,7 @@ jobs:
       uses: softprops/action-gh-release@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        repository: uvifhtdj/test2
         tag_name: v1.0.0
         files: |
           ./dist/**/*
